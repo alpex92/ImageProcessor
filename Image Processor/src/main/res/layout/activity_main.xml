@@ -1,0 +1,19 @@
+<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+    <fragment
+            android:name="com.alpex.imageprocessor.fragments.SourceFragment"
+            android:id="@+id/in_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.8">
+    </fragment>
+    <fragment
+            android:name="com.alpex.imageprocessor.fragments.ProcessFragment"
+            android:id="@+id/out_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+    </fragment>
+</LinearLayout>

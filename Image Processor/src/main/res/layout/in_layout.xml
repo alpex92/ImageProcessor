@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:baselineAligned="false">
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_weight="1">
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView" android:layout_gravity="center" android:scaleType="fitCenter"
+                android:background="@drawable/border" android:clickable="true"
+                android:padding="3dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/btn_open"
+                android:id="@+id/previewPlaceHolder" android:layout_gravity="center"/>
+    </FrameLayout>
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1.5">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_gravity="center">
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/btn_rotate"
+                    android:id="@+id/btn_rotate"/>
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/btn_bnw"
+                    android:id="@+id/btn_bnw"/>
+            <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="@string/btn_mirror"
+                    android:id="@+id/btn_mirror"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
